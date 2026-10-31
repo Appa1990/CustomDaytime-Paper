@@ -1,0 +1,38 @@
+[versions]
+# --- Platform Depencies ---
+paper = "26.3.build.+"
+run-paper = "3.0.2"
+plugin-yml = "0.9.0"
+spongegradle = "2.3.1-SNAPSHOT"
+spongevanilla = "0.2.2-SNAPSHOT"
+sponge-api = "18.0.0-SNAPSHOT"
+spongeminecraft = "1.21.11"
+
+# --- General Java Utilities ---
+lombok = "1.18.42"
+configurate = "4.2.0"
+gson = "2.13.2"
+bstats = "3.1.0"
+minotaur = "2.+"
+
+# --- Build & Tooling ---
+shadow = "9.3.1"
+
+[libraries]
+# --- Minecraft Server APIs & Platform Libaries ---
+paper-api = {group = "io.papermc.paper", name = "paper-api", version.ref = "paper"}
+bstats-bukkit = {group = "org.bstats", name = "bstats-bukkit", version.ref = "bstats"}
+
+# --- General Java Utilities ---
+lombok = {group = "org.projectlombok", name = "lombok", version.ref = "lombok"}
+configurate-hocon = {group = "org.spongepowered", name = "configurate-hocon", version.ref = "configurate"}
+gson = {group = "com.google.code.gson", name = "gson", version.ref = "gson"}
+
+[plugins]
+# --- Build Plugins ---
+shadow = {id = "com.gradleup.shadow", version.ref = "shadow"}
+run-paper = {id = "xyz.jpenilla.run-paper", version.ref = "run-paper"}
+plugin-yml = {id = "de.eldoria.plugin-yml.paper", version.ref = "plugin-yml"}
+spongegradle = {id = "org.spongepowered.gradle.plugin", version.ref = "spongegradle"}
+spongevanilla = {id = "org.spongepowered.gradle.vanilla", version.ref = "spongevanilla"}
+minotaur = { id = "com.modrinth.minotaur", version.ref = "minotaur" }
